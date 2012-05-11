@@ -1,0 +1,7 @@
+*.suo
+*.user
+*.cache
+.DS_Store
+_ReSharper.*
+*/bin/*
+*/obj/*
