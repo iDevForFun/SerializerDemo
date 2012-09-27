@@ -38,9 +38,9 @@ namespace SerializerDemo
             var obj = serializer.Deserialise(xml);
 
             Assert.IsNotNull(obj);
-            Assert.IsTrue(obj.People.Count == 2);
+            Assert.IsTrue(obj.Count == 2);
 
-            var leonard = obj.People.First();
+            var leonard = obj.First();
             Assert.AreEqual(leonard.FirstName, "Leonard");
             Assert.AreEqual(leonard.LastName, "Hofstadter");
             Assert.AreEqual(leonard.Address.HouseNumber, "12");
